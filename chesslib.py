@@ -15,7 +15,7 @@
 #Queen:  +4
 #King:   +5
 
-#_ is a BLACK square, # is a WHITE square
+#__ is a BLACK square, ## is a WHITE square
 
 #starting chess board
 def genBoard():
@@ -465,14 +465,3 @@ def IsPositionUnderThreat(board, position, player):
                                 if plays==position:
                                         return True
         return False
-
-
-#board=[13,11,12,14,15,12,11,13,10,10,10,10,10,10,10,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,20,20,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,20,20,20,20,0,23,21,22,24,25,22,21,23]
-board=[13,11,12,14,0,12,11,13,10,10,10,10,10,10,10,10,0,0,0,0,0,0,0,0,0,23,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,20,20,20,20,20,20,20,23,21,22,24,25,22,21,23]
-printBoard(board)
-print(GetPieceLegalMoves(board,26))
-print(IsPositionUnderThreat(board,26,10))
-
-
-
-
